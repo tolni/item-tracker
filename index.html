@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "style.css">
+  <script src='./script.js' defer></script>
+  <title>ITEM TRACKER</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand active" href="index.html">Item Tracker</a>
+      </div>
+    </div>
+  </nav>
+
+  <form id='item_question_form' action='item/question'>
+    <label for='item_question'>Search for items/locations: (To see all items and their locations, press submit while search bar is empty) : </label><input id='item_question' name='item_question'></input>
+    <input type='submit'></input>
+  </form>
+
+  <div id='question_content'>
+    <ul id='question_content_list'></ul>
+  </div>
+  
+
+  <div class="container maintitle">
+    <h1 class="display-2" style="text-align: center;">Item Tracker - so that you'll never misplace anything again</h1>
+  </div>
+
+  
+  <div class="container-fluid backgroundcontainer">
+    
+     
+    <h2>Add items</h2>
+    <p>Enter an item and its location below to track it!</p>
+  
+    <form method='POST' id='item_add_form'>
+      Item: <input name='name'> 
+      Location: <input name='location'>
+      <input type='submit' label='Add this item'>
+    </form>
+
+
+  </div>
+</body>
+
+</html>
